@@ -22,9 +22,7 @@ int networkAlertStub(float celcius) {
 
 float convertFarenhitToCelcius(float farenheit)
 {
-    float celcius ;
-    celcius = (farenheit - 32) * 5 / 9;
-    return celcius;
+	return ((fahrenheit - 32) * 5 / 9);
 }
 void alertInCelcius(float farenheit, int (*NetworkAlertPtr)(float)) 
 {
@@ -57,7 +55,7 @@ void commonAlert(void)
     checkalertInCelcius(303.6);
     checkalertInCelcius(200);
     checkalertInCelcius(111.2);
-    assert(alertFailureCount == 1);
+    assert(alertFailureCount == 2);
 }
 
 int main() 
