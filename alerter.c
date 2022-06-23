@@ -55,7 +55,7 @@ void commonAlert(void)
     checkalertInCelcius(303.6);
     checkalertInCelcius(200);
     checkalertInCelcius(111.2);
-    assert(alertFailureCount == 2);
+    assert(alertFailureCount == 1);
 }
 
 int main() 
